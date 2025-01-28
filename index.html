@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>succy - The Ultimate Meme Experience</title>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General Styles */
+    body {
+      font-family: 'Futura', sans-serif;
+      background-color: #0D0D0D;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: 'Merriweather', serif;
+      line-height: 1.6;
+    }
+
+    /* Art Deco Styles */
+    .art-deco-bg {
+      background: linear-gradient(45deg, #2D3F61, #1B2A41);
+    }
+
+    .art-deco-border {
+      border: 2px solid #FFCE00;
+      padding: 10px;
+    }
+
+    .art-deco-button {
+      background-color: #FFCE00;
+      color: #2D3F61;
+      border: none;
+      padding: 10px 20px;
+      font-family: 'Bebas Neue', cursive;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .art-deco-button:hover {
+      background-color: #2D3F61;
+      color: #FFCE00;
+      cursor: pointer;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Intro Section -->
+  <section id="intro" class="art-deco-bg">
+    <div id="animated-background">
+      <!-- Placeholder for animated background -->
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="meme-style-heading" style="animation: fadeIn 1s ease;">Welcome to the World of succy</h1>
+        <p class="engaging-subheading" style="animation: slideUp 1s ease;">Your portal to the most exciting meme-powered cryptocurrency.</p>
+        <button class="art-deco-button" id="explore-btn">Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title-with-animation">What is succy?</h2>
+      <div class="content-blocks">
+        <div class="content-block">
+          <img src="./logo.png" alt="About succy" class="rounded-image-with-shadow">
+          <p>This is the succest pet, the meme pet that represents succesfull and green trade bars</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="art-deco-bg">
+    <div class="container">
+      <h2 class="section-title-with-animation">Tokenomics</h2>
+      <div id="tokenomics-visualization">
+        <!-- Placeholder for tokenomics visualization -->
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Buy Section -->
+  <section id="how-to-buy">
+    <div class="container">
+      <h2 class="section-title-with-animation">Join the succy Community - How to Buy</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>Get a Wallet</h3>
+          <p>Download a reputable Ethereum wallet like MetaMask or Trust Wallet.</p>
+        </div>
+        <div class="step">
+          <h3>Acquire ETH</h3>
+          <p>Purchase Ethereum (ETH) from a cryptocurrency exchange.</p>
+        </div>
+        <div class="step">
+          <h3>Connect to a DEX</h3>
+          <p>Connect your wallet to a decentralized exchange like Uniswap or SushiSwap.</p>
+        </div>
+        <div class="step">
+          <h3>Swap ETH for scy</h3>
+          <p>Use the DEX's swap feature to exchange your ETH for scy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="art-deco-bg">
+    <div class="container">
+      <h2 class="section-title-with-animation">The succy Journey - Our Roadmap</h2>
+      <div id="timeline">
+        <!-- Placeholder for interactive timeline -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community">
+    <div class="container">
+      <h2 class="section-title-with-animation">Connect with the succy Community</h2>
+      <div class="social-links">
+        <a href="{youtube_url}" target="_blank">YouTube</a>
+        <a href="{tiktok_url}" target="_blank">TikTok</a>
+        <a href="{twitter_url}" target="_blank">Twitter</a>
+        <a href="{telegram_url}" target="_blank">Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="art-deco-bg">
+    <div class="container">
+      <p>&copy; 2023 succy. All rights reserved.</p>
+      <p class="copiable-text">9678982156897512</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript code for interactions and animations
+    const exploreBtn = document.getElementById('explore-btn');
+    const introSection = document.getElementById('intro');
+    const aboutSection = document.getElementById('about');
+
+    exploreBtn.addEventListener('click', () => {
+      introSection.style.display = 'none';
+      aboutSection.style.display = 'block';
+      aboutSection.style.animation = 'fadeIn 1s ease';
+    });
+
+    // Additional JavaScript code for other sections and interactions
+  </script>
+</body>
+</html>
